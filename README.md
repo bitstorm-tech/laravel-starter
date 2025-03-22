@@ -2,7 +2,9 @@
 
 ## Initial steps before first use
 1. Install composer dependencies
-```composer install```
+```
+composer install
+```
 2. Create .env
 ```cp .env.example .env```
 3. Generate application key
