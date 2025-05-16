@@ -1,39 +1,45 @@
 # Bitstorm Laravel Starter
 
 ## Initial steps before first use
-1. Install composer dependencies
+1. Re-init git repository
+```
+rm .git -rf && git init
+```
+
+2. Update dependencies
+```
+composer update
+```
+ 
+3. Install composer dependencies
 ```
 composer install
 ```
 
-2. Create .env
+4. Create .env
 ```
 cp .env.example .env
 ```
 
-3. Generate application key
+5. Generate application key
 ```
 php artisan key:generate
 ```
 
-4. Install NPM dependencies
+6. Install NPM dependencies
 ```
 npm install
 ```
 
-5. Migrate database
+7. Migrate database
 ```
 php artisan migrate
-```
-
-6. Reinitialize Git
-```
-rm .git -rf && git init
 ```
 
 All in one:
 ```
 rm .git -rf && git init
+composer update
 composer install
 cp .env.example .env
 php artisan key:generate
